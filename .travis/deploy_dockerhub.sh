@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -f Dockerfile -t terenceocto:$TAG .
+docker build -f Dockerfile -t terenceocto/Random-Quotes-Azure:$TAG .
 sudo docker push terenceocto:$TAG
